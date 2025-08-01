@@ -61,6 +61,12 @@
     app-region: drag;
     cursor: move;
   }
+
+  .no-drag {
+    -webkit-app-region: no-drag;
+    app-region: no-drag;
+    cursor: pointer;
+  }
 }
 
 @layer components {

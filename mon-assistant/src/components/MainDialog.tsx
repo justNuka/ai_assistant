@@ -14,6 +14,8 @@ type TabType = 'conversation' | 'history' | 'quickActions' | 'settings';
 export function MainDialog({ isOpen, onClose }: MainDialogProps) {
   const [activeTab, setActiveTab] = useState<TabType>('conversation');
 
+  console.log("MainDialog render - isOpen:", isOpen);
+
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && isOpen) {
